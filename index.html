@@ -2,11 +2,23 @@
 <html lang=”en”>
    <head>
       <title>womaniyam</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+      <script>
+         setInterval(() => {
+            var image = document.getElementsByClassName("mariyam");
+            image.src = "mariyam blink.png"
+
+            setTimeout(() => {
+            image.src = "womaniyam.png"
+            }, 250)
+
+         }, 15000)
+      </script>
    </head>
    <body style="background-color:black;">
-      <audio controls loop src="ewn.mp3" style="display:none;" autoplay>
+      <audio controls loop src="ewn.mp3" style="display:none;" autoplay></audio>
       <div style="text-align: center;">
-         <img width="400" height="400" src="womaniyam.png">
+         <img class ="mariyam" width="400" height="400" src="womaniyam.png">
       </div>
    </body>
 </html>
